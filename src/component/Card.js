@@ -2,29 +2,24 @@ import React from "react";
 import pointer from "../img/pointer.png";
 
 export default function Card(props) {
-	console.log(props);
 	return (
 		<div className="card">
-			<div className="card-img">
+			<div className="card-img" alt="location">
 				<img src={props.card.coverImg} />
 			</div>
 			<div className="card-info">
 				<div className="location">
 					<span className="location-name">
 						<img src={pointer} />
-						Japan
+						{props.card.location}
 					</span>
 					<a href="#" className="location-link">
 						View on google maps
 					</a>
 				</div>
-				<h2 className="title">Mount Fjui</h2>
-				<div className="date">12 Jan, 2021 - 24 Jan, 2021</div>
-				<p className="description">
-					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt in
-					dolores error sequi qui illo nesciunt blanditiis laudantium, maiores
-					nobis.
-				</p>
+				<h2 className="title">{props.card.title}</h2>
+				<div className="date">{props.card.date}</div>
+				<p className="description">{props.card.description}</p>
 			</div>
 		</div>
 	);

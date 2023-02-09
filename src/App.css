@@ -1,6 +1,7 @@
 .container {
 	width: 550px;
 	background-color: #fff;
+	margin: auto;
 }
 
 nav {
@@ -21,13 +22,22 @@ nav {
 	gap: 5px;
 }
 
+.cards {
+	padding: 2rem 0;
+}
+
 .card {
+	width: 470px;
 	display: flex;
-	gap: 1.5rem;
+	align-items: center;
+	gap: 1rem;
+	margin: 1rem auto;
 }
 
 .card-img img {
 	border-radius: 5px;
+	width: 125px;
+	height: 168px;
 }
 
 .card-info {
@@ -35,11 +45,13 @@ nav {
 }
 
 .location {
-	padding-bottom: 5px;
+	padding-bottom: 6px;
+	display: flex;
 }
 
 .location-name img {
 	width: 7px;
+	margin-right: 5px;
 }
 
 .location-name {
@@ -47,6 +59,7 @@ nav {
 	line-height: 12px;
 	letter-spacing: 0.17em;
 	text-transform: uppercase;
+	display: flex;
 }
 
 .location-link {
@@ -54,6 +67,7 @@ nav {
 	line-height: 12px;
 	/* identical to box height */
 	/* text-decoration-line: underline; */
+	margin-left: 10px;
 	color: #918e9b;
 }
 
@@ -61,7 +75,7 @@ nav {
 	font-weight: 700;
 	font-size: 25px;
 	line-height: 30px;
-	padding-bottom: 1.1rem;
+	padding-bottom: 1rem;
 }
 
 .date {
