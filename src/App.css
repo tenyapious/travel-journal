@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+.container {
+	width: 550px;
+	background-color: #fff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav {
+	color: #fff;
+	background-color: #f55a5a;
+	height: 55px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#logo {
+	font-size: 14.4608px;
+	letter-spacing: -0.075em;
+	font-weight: 100;
+	display: flex;
+	align-items: center;
+	gap: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card {
+	display: flex;
+	gap: 1.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.card-img img {
+	border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-info {
+	color: #2b283a;
+}
+
+.location {
+	padding-bottom: 5px;
+}
+
+.location-name img {
+	width: 7px;
+}
+
+.location-name {
+	font-size: 10.24px;
+	line-height: 12px;
+	letter-spacing: 0.17em;
+	text-transform: uppercase;
+}
+
+.location-link {
+	font-size: 10.24px;
+	line-height: 12px;
+	/* identical to box height */
+	/* text-decoration-line: underline; */
+	color: #918e9b;
+}
+
+.title {
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 30px;
+	padding-bottom: 1.1rem;
+}
+
+.date {
+	font-weight: 700;
+	font-size: 10.24px;
+	line-height: 12px;
+	padding-bottom: 8px;
+}
+.description {
+	font-size: 10.24px;
+	line-height: 150%;
 }
